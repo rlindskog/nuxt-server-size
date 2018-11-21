@@ -1,0 +1,20 @@
+{
+  "name": "nuxt-split",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "node index"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nuxt/core": "^2.3.2",
+    "core-js": "^2.5.7"
+  },
+  "devDependencies": {
+    "nuxt": "^2.3.2"
+  }
+}
