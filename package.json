@@ -1,20 +1,21 @@
 {
-  "name": "nuxt-server-size",
+  "name": "next-example",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "next.config.js",
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "node index"
+    "dev": "next",
+    "build": "next build",
+    "start": "next-start"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "@nuxt/core": "^2.3.2",
-    "core-js": "^2.5.7"
-  },
   "devDependencies": {
-    "nuxt": "^2.3.2"
+    "next": "^7.0.2"
+  },
+  "dependencies": {
+    "next-server": "0.0.1",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
   }
 }
