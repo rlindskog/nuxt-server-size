@@ -1,15 +1,18 @@
 const { Server } = require('http')
-const { Module, Nuxt, Resolver } = require('@nuxt/core')
+const { Nuxt } = require('@nuxt/core')
 
 
-process.env.NODE_ENV = 'production'
-let config = {}
-config.dev = process.env.NODE_ENV
+let config = {
+  dev: false
+}
+
 
 const nuxt = new Nuxt(config)
 
 const server = new Server(nuxt.render)
 
-const port = process.env.PORT || 3000
+const port = 3000
 
-server.listen(port)
+server.listen(port, error => {
+  console.log('listening at http://localhost:' + port)
+})

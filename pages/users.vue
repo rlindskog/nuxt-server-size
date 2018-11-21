@@ -1,8 +1,8 @@
 <template>
   <div>
     Users!
-    <router-link :to="{ params: { id: +$route.params.id + 1 } }">Next</router-link>
     <router-link :to="{ params: { id: +$route.params.id - 1 } }">Previous</router-link>
+    <router-link :to="{ params: { id: +$route.params.id + 1 } }">Next</router-link>
     <router-view/>
   </div>
 </template>
